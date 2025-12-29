@@ -1,0 +1,5 @@
+Rule : airports.t0.iso_region == airports.t1.iso_region ->  airports.t0.continent == airports.t1.continent
+Rule : airports.t0.iso_country == airports.t1.iso_country ->  airports.t0.continent == airports.t1.continent
+Rule : airports.t0.iata_code == airports.t1.iata_code ->  airports.t0.continent == airports.t1.continent
+Rule : airports.t0.iso_region == airports.t1.iso_region ->  airports.t0.iso_country == airports.t1.iso_country
+

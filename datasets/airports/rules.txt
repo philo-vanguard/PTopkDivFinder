@@ -1,0 +1,96 @@
+Rule : airports.t0.scheduled_service == airports.t1.scheduled_service -> airports.t0.home_link == airports.t1.home_link, supp: 317893143, conf:0.9143360472020419
+Rule : airports.t0.scheduled_service == airports.t1.scheduled_service -> airports.t0.iata_code == airports.t1.iata_code, supp: 279835131, conf:0.8048721816777457
+Rule : airports.t0.scheduled_service == airports.t1.scheduled_service -> airports.t0.wikipedia_link == airports.t1.wikipedia_link, supp: 268450237, conf:0.7721265273376197
+Rule : airports.t0.type == airports.t1.type -> airports.t0.scheduled_service == airports.t1.scheduled_service, supp: 161583096, conf:0.9500381577825455
+Rule : airports.t0.type == airports.t1.type -> airports.t0.home_link == airports.t1.home_link, supp: 154252840, conf:0.9069394483339133
+Rule : airports.t0.continent == airports.t1.continent -> airports.t0.scheduled_service == airports.t1.scheduled_service, supp: 111363235, conf:0.9120671587563942
+Rule : airports.t0.continent == airports.t1.continent -> airports.t0.home_link == airports.t1.home_link, supp: 111113673, conf:0.910023240902593
+Rule : airports.t0.type == airports.t1.type -> airports.t0.iata_code == airports.t1.iata_code, supp: 132844512, conf:0.7810678132569093
+Rule : airports.t0.type == airports.t1.type -> airports.t0.wikipedia_link == airports.t1.wikipedia_link, supp: 129758804, conf:0.7629251955181401
+Rule : airports.t0.iso_country == airports.t1.iso_country -> airports.t0.continent == airports.t1.continent, supp: 72431101, conf:0.9990349383675984
+Rule : airports.t0.type == airports.t1.type ^ airports.t0.scheduled_service == airports.t1.scheduled_service -> airports.t0.keywords == airports.t1.keywords, supp: 121646699, conf:0.7528429815012517
+Rule : airports.t0.scheduled_service == airports.t1.scheduled_service ^ airports.t1.iso_country == US ^ airports.t0.iso_country == US -> airports.t0.continent == airports.t1.continent, supp: 63456981, conf:0.9997490582950909
+Rule : airports.t0.iso_country == airports.t1.iso_country -> airports.t0.iso_country == US, supp: 69066709, conf:0.9526302157006816
+Rule : airports.t0.continent == airports.t1.continent -> airports.t0.iata_code == airports.t1.iata_code, supp: 95194453, conf:0.7796445054517239
+Rule : airports.t0.iso_country == airports.t1.iso_country -> airports.t0.scheduled_service == airports.t1.scheduled_service, supp: 66699131, conf:0.9199744489284702
+Rule : airports.t0.iso_country == airports.t1.iso_country -> airports.t0.wikipedia_link == airports.t1.wikipedia_link, supp: 66308449, conf:0.9145858111416261
+Rule : airports.t0.continent == airports.t1.continent ^ airports.t0.iso_country == US -> airports.t0.iso_country == airports.t1.iso_country, supp: 66292165, conf:0.82008542960026
+Rule : airports.t0.continent == airports.t1.continent ^ airports.t1.iso_country == US -> airports.t0.iso_country == US, supp: 66292165, conf:0.82008542960026
+Rule : airports.t0.continent == airports.t1.continent ^ airports.t1.iso_country == US -> airports.t0.iso_country == airports.t1.iso_country, supp: 66292165, conf:0.82008542960026
+Rule : airports.t0.type == airports.t1.type ^ airports.t1.iso_country == US ^ airports.t0.iso_country == US -> airports.t0.continent == airports.t1.continent, supp: 27657749, conf:0.9998384077575266
+Rule : airports.t0.iso_country == airports.t1.iso_country -> airports.t0.iata_code == airports.t1.iata_code, supp: 60192405, conf:0.830227827399345
+Rule : airports.t0.iso_country == airports.t1.iso_country -> airports.t0.home_link == airports.t1.home_link, supp: 57802913, conf:0.7972698030149045
+Rule : airports.t0.type == airports.t1.type ^ airports.t1.iso_country == US -> airports.t0.keywords == airports.t1.keywords, supp: 53870152, conf:0.7926973168073503
+Rule : airports.t0.scheduled_service == airports.t1.scheduled_service ^ airports.t1.iso_country == BR ^ airports.t0.iso_country == BR -> airports.t0.continent == airports.t1.continent, supp: 2984129, conf:1.0
+Rule : airports.t0.iso_region == airports.t1.iso_region -> airports.t0.iso_country == airports.t1.iso_country, supp: 2935737, conf:1.0
+Rule : airports.t0.iso_region == airports.t1.iso_region -> airports.t0.continent == airports.t1.continent, supp: 2934063, conf:0.9994297854337769
+Rule : airports.t0.iso_region == airports.t1.iso_region ^ airports.t1.iso_country == US -> airports.t0.iso_country == US, supp: 2145052, conf:1.0
+Rule : airports.t0.type == airports.t1.type ^ airports.t1.iso_country == BR ^ airports.t0.iso_country == BR -> airports.t0.continent == airports.t1.continent, supp: 1719711, conf:1.0
+Rule : airports.t0.iso_region == airports.t1.iso_region ^ airports.t1.iso_country == BR -> airports.t0.iso_country == BR, supp: 286530, conf:1.0
+Rule : airports.t0.elevation_ft == airports.t1.elevation_ft ^ airports.t1.iso_country == US ^ airports.t0.iso_country == US -> airports.t0.continent == airports.t1.continent, supp: 91441, conf:0.9997157444761499
+Rule : airports.t0.elevation_ft == airports.t1.elevation_ft ^ airports.t1.iso_country == BR ^ airports.t0.iso_country == BR -> airports.t0.continent == airports.t1.continent, supp: 4651, conf:1.0
+Rule : airports.t0.iata_code == airports.t1.iata_code -> airports.t0.continent == airports.t1.continent, supp: 516, conf:1.0
+Rule : airports.t0.keywords == airports.t1.keywords -> airports.t0.continent == airports.t1.continent, supp: 670, conf:0.9970238095238095
+Rule : airports.t0.keywords == airports.t1.keywords -> airports.t0.iso_country == airports.t1.iso_country, supp: 670, conf:0.9970238095238095
+Rule : airports.t0.keywords == airports.t1.keywords -> airports.t0.scheduled_service == airports.t1.scheduled_service, supp: 670, conf:0.9970238095238095
+Rule : airports.t0.iata_code == airports.t1.iata_code -> airports.t0.keywords == airports.t1.keywords, supp: 514, conf:0.9961240310077519
+Rule : airports.t0.keywords == airports.t1.keywords -> airports.t0.local_code == airports.t1.local_code, supp: 668, conf:0.9940476190476191
+Rule : airports.t0.municipality == airports.t1.municipality ^ airports.t1.iso_country == BR -> airports.t0.iso_country == BR, supp: 11632, conf:0.9938482570061518
+Rule : airports.t0.iata_code == airports.t1.iata_code -> airports.t0.iso_country == BR, supp: 512, conf:0.9922480620155039
+Rule : airports.t0.iata_code == airports.t1.iata_code -> airports.t0.iso_country == airports.t1.iso_country, supp: 512, conf:0.9922480620155039
+Rule : airports.t0.iata_code == airports.t1.iata_code -> airports.t0.scheduled_service == airports.t1.scheduled_service, supp: 512, conf:0.9922480620155039
+Rule : airports.t0.iata_code == airports.t1.iata_code -> airports.t0.wikipedia_link == airports.t1.wikipedia_link, supp: 512, conf:0.9922480620155039
+Rule : airports.t0.iata_code == airports.t1.iata_code -> airports.t0.type == airports.t1.type, supp: 508, conf:0.9844961240310077
+Rule : airports.t0.keywords == airports.t1.keywords -> airports.t0.home_link == airports.t1.home_link, supp: 660, conf:0.9821428571428571
+Rule : airports.t0.keywords == airports.t1.keywords -> airports.t0.iata_code == airports.t1.iata_code, supp: 658, conf:0.9791666666666666
+Rule : airports.t0.keywords == airports.t1.keywords -> airports.t0.type == airports.t1.type, supp: 658, conf:0.9791666666666666
+Rule : airports.t0.keywords == airports.t1.keywords -> airports.t0.wikipedia_link == airports.t1.wikipedia_link, supp: 658, conf:0.9791666666666666
+Rule : airports.t0.municipality == airports.t1.municipality -> airports.t0.continent == airports.t1.continent, supp: 63906, conf:0.9778736687477048
+Rule : airports.t0.keywords == airports.t1.keywords -> airports.t0.iso_region == airports.t1.iso_region, supp: 654, conf:0.9732142857142857
+Rule : airports.t0.municipality == airports.t1.municipality ^ airports.t1.iso_country == US -> airports.t0.keywords == airports.t1.keywords, supp: 26004, conf:0.9667992712941964
+Rule : airports.t0.municipality == airports.t1.municipality -> airports.t0.iso_country == airports.t1.iso_country, supp: 63106, conf:0.9656322683314971
+Rule : airports.t0.iso_region == airports.t1.iso_region -> airports.t0.scheduled_service == airports.t1.scheduled_service, supp: 2794619, conf:0.9519309801933893
+Rule : airports.t0.keywords == airports.t1.keywords -> airports.t0.gps_code == airports.t1.gps_code, supp: 648, conf:0.9642857142857143
+Rule : airports.t0.type == airports.t1.type ^ airports.t0.iso_country == airports.t1.iso_country -> airports.t0.keywords == airports.t1.keywords, supp: 25765312, conf:0.8352425626545902
+Rule : airports.t0.municipality == airports.t1.municipality -> airports.t0.scheduled_service == airports.t1.scheduled_service, supp: 62898, conf:0.9624495042232831
+Rule : airports.t0.municipality == airports.t1.municipality -> airports.t0.home_link == airports.t1.home_link, supp: 62628, conf:0.958318031582813
+Rule : airports.t0.continent == airports.t1.continent ^ airports.t0.type == airports.t1.type -> airports.t0.keywords == airports.t1.keywords, supp: 38710931, conf:0.7641710091862359
+Rule : airports.t0.keywords == airports.t1.keywords -> airports.t0.municipality == airports.t1.municipality, supp: 640, conf:0.9523809523809523
+Rule : airports.t0.keywords == airports.t1.keywords -> airports.t0.elevation_ft == airports.t1.elevation_ft, supp: 634, conf:0.9434523809523809
+Rule : airports.t0.iata_code == airports.t1.iata_code -> airports.t0.local_code == airports.t1.local_code, supp: 484, conf:0.937984496124031
+Rule : airports.t0.iso_region == airports.t1.iso_region -> airports.t0.home_link == airports.t1.home_link, supp: 2677709, conf:0.912107930649101
+Rule : airports.t0.municipality == airports.t1.municipality -> airports.t0.iata_code == airports.t1.iata_code, supp: 60164, conf:0.9206145183008936
+Rule : airports.t0.local_code == airports.t1.local_code -> airports.t0.home_link == airports.t1.home_link, supp: 674, conf:0.9157608695652174
+Rule : airports.t0.iata_code == airports.t1.iata_code -> airports.t0.home_link == airports.t1.home_link, supp: 468, conf:0.9069767441860465
+Rule : airports.t0.local_code == airports.t1.local_code -> airports.t0.scheduled_service == airports.t1.scheduled_service, supp: 666, conf:0.904891304347826
+Rule : airports.t0.elevation_ft == airports.t1.elevation_ft -> airports.t0.home_link == airports.t1.home_link, supp: 282166, conf:0.9033648151112534
+Rule : airports.t0.municipality == airports.t1.municipality -> airports.t0.wikipedia_link == airports.t1.wikipedia_link, supp: 58706, conf:0.8983045660423552
+Rule : airports.t0.iso_region == airports.t1.iso_region ^ airports.t0.elevation_ft == airports.t1.elevation_ft ^ airports.t0.iso_country == BR -> airports.t0.type == airports.t1.type, supp: 870, conf:0.8823529411764706
+Rule : airports.t0.iso_region == airports.t1.iso_region ^ airports.t0.elevation_ft == airports.t1.elevation_ft ^ airports.t1.iso_country == BR -> airports.t0.type == airports.t1.type, supp: 870, conf:0.8823529411764706
+Rule : airports.t0.municipality == airports.t1.municipality ^ airports.t0.elevation_ft == airports.t1.elevation_ft -> airports.t0.keywords == airports.t1.keywords, supp: 601, conf:0.869753979739508
+Rule : airports.t0.local_code == airports.t1.local_code -> airports.t0.keywords == airports.t1.keywords, supp: 640, conf:0.8695652173913043
+Rule : airports.t0.elevation_ft == airports.t1.elevation_ft -> airports.t0.scheduled_service == airports.t1.scheduled_service, supp: 267618, conf:0.856788858652153
+Rule : airports.t0.iso_region == airports.t1.iso_region -> airports.t0.iata_code == airports.t1.iata_code, supp: 2455489, conf:0.8364131391878769
+Rule : airports.t0.type == airports.t1.type ^ airports.t1.iso_country == BR -> airports.t0.keywords == airports.t1.keywords, supp: 13096995, conf:0.7715428246784461
+Rule : airports.t0.continent == airports.t1.continent ^ airports.t1.iso_country == BR -> airports.t0.keywords == airports.t1.keywords, supp: 4117365, conf:0.7933756596506258
+Rule : airports.t0.municipality == airports.t1.municipality -> airports.t0.iso_region == airports.t1.iso_region, supp: 53086, conf:0.8123087281184967
+Rule : airports.t0.iso_region == airports.t1.iso_region ^ airports.t0.type == airports.t1.type -> airports.t0.keywords == airports.t1.keywords, supp: 1133419, conf:0.7978997580434536
+Rule : airports.t0.iso_region == airports.t1.iso_region -> airports.t0.wikipedia_link == airports.t1.wikipedia_link, supp: 2321537, conf:0.7907850737310597
+Rule : airports.t0.iso_region == airports.t1.iso_region ^ airports.t0.elevation_ft == airports.t1.elevation_ft -> airports.t0.iso_country == US, supp: 10267, conf:0.7863215133644789
+Rule : airports.t0.municipality == airports.t1.municipality ^ airports.t1.iso_country == US -> airports.t0.iso_country == US, supp: 21067, conf:0.7832472022902183
+Rule : airports.t0.elevation_ft == airports.t1.elevation_ft ^ airports.t1.iso_country == BR ^ airports.t0.iso_country == BR -> airports.t0.type == airports.t1.type, supp: 3637, conf:0.7819823693829284
+Rule : airports.t0.local_code == airports.t1.local_code -> airports.t0.wikipedia_link == airports.t1.wikipedia_link, supp: 572, conf:0.7771739130434783
+Rule : airports.t0.iso_region == airports.t1.iso_region ^ airports.t0.elevation_ft == airports.t1.elevation_ft -> airports.t0.keywords == airports.t1.keywords, supp: 10136, conf:0.7762885808378648
+Rule : airports.t0.elevation_ft == airports.t1.elevation_ft ^ airports.t0.type == airports.t1.type -> airports.t0.keywords == airports.t1.keywords, supp: 107966, conf:0.7753393177737882
+Rule : airports.t0.local_code == airports.t1.local_code -> airports.t0.type == airports.t1.type, supp: 570, conf:0.7744565217391305
+Rule : airports.t0.iso_country == airports.t1.iso_country ^ airports.t1.iso_country == BR -> airports.t0.keywords == airports.t1.keywords, supp: 2377989, conf:0.7616171981517406
+Rule : airports.t0.elevation_ft == airports.t1.elevation_ft ^ airports.t0.iso_country == airports.t1.iso_country ^ airports.t0.iso_country == BR -> airports.t0.type == airports.t1.type, supp: 3205, conf:0.7596586868926286
+Rule : airports.t0.elevation_ft == airports.t1.elevation_ft ^ airports.t0.iso_country == airports.t1.iso_country ^ airports.t1.iso_country == BR -> airports.t0.type == airports.t1.type, supp: 3205, conf:0.7596586868926286
+Rule : airports.t0.municipality == airports.t1.municipality -> airports.t0.type == airports.t1.type, supp: 49574, conf:0.7585689802913453
+Rule : airports.t0.municipality == airports.t1.municipality ^ airports.t0.scheduled_service == airports.t1.scheduled_service ^ airports.t1.iso_country == BR -> airports.t0.keywords == airports.t1.keywords, supp: 8500, conf:0.7585222202391576
+Rule : airports.t0.elevation_ft == airports.t1.elevation_ft ^ airports.t0.iso_country == airports.t1.iso_country -> airports.t0.keywords == airports.t1.keywords, supp: 75934, conf:0.7547511132315522
+Rule : airports.t0.iso_region == airports.t1.iso_region ^ airports.t0.scheduled_service == airports.t1.scheduled_service ^ airports.t1.iso_country == BR -> airports.t0.keywords == airports.t1.keywords, supp: 208466, conf:0.7522046619037309
+Rule : airports.t0.continent == airports.t1.continent ^ airports.t0.elevation_ft == airports.t1.elevation_ft ^ airports.t0.iso_country == BR -> airports.t0.iso_country == airports.t1.iso_country, supp: 4335, conf:0.7507793557325944
+Rule : airports.t0.continent == airports.t1.continent ^ airports.t0.elevation_ft == airports.t1.elevation_ft ^ airports.t1.iso_country == BR -> airports.t0.iso_country == BR, supp: 4335, conf:0.7507793557325944
+Rule : airports.t0.continent == airports.t1.continent ^ airports.t0.elevation_ft == airports.t1.elevation_ft ^ airports.t1.iso_country == BR -> airports.t0.iso_country == airports.t1.iso_country, supp: 4335, conf:0.7507793557325944
+Rule : airports.t0.continent == airports.t1.continent ^ airports.t0.elevation_ft == airports.t1.elevation_ft ^ airports.t0.type == airports.t1.type -> airports.t0.iso_country == airports.t1.iso_country, supp: 51678, conf:0.7505010311074966

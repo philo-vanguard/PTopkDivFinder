@@ -1,0 +1,13 @@
+ntop:10
+ncand:1
+experiment_type:
+task:train
+with_cid:all
+with_rid:first
+match_file:
+input_file:/home/hanzy/embdi/datasets/airports_sample/edgelist.txt
+dataset_info:pipeline/info/
+test_dir:
+embeddings_file:
+output_file:airports_embedding
+flatten:tt

@@ -1,0 +1,9 @@
+continent=NA_, supp: 0.4964
+iso_country=US, supp: 0.40715
+scheduled_service=no, supp: 0.92965
+type=small_airport, supp: 0.6075
+iso_country=US^continent=NA_, supp: 0.4071
+scheduled_service=no^continent=NA_, supp: 0.47805
+scheduled_service=no^iso_country=US, supp: 0.39825
+scheduled_service=no^type=small_airport, supp: 0.59295
+scheduled_service=no^iso_country=US^continent=NA_, supp: 0.3982
