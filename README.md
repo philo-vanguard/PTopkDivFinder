@@ -1,6 +1,4 @@
 # Fast Diversified Top-k Rule Discovery
-Rule discovery is a fundamental task in data analysis, with broad applications in data cleaning, knowledge extraction, and decision making. However, existing methods often generate a large number of functionally redundant rules, with a high time cost. To address this, a recent line of work, the first to introduce diversified top-k rule discovery, aims to identify a set of top-ranked rules that are both relevant and diverse. Despite this advancement, it still suffers from high user interaction overhead, computational inefficiency, and the inability to handle a common scenario of selecting a diverse subset from an existing rule set.
-
 In this paper, we propose a user-friendly and efficient framework for diversified top-k rule discovery. As a testbed, we consider Entity Enhancing Rules (REEs), which subsume common association rules and data quality rules as special cases. Our method allows users to specify lightweight preference templates, which are used to train a correlation model that captures user preferences and generates subjective embeddings for predicates and rules. Based on these embeddings, we define an objective function to jointly measure the relevance and diversity of rules in a unified vector space; moreover, we formulate and study two key problems: (i) selecting diversified top-k rules from an existing redundant rule set, and (ii) discovering diversified top-k rules directly from raw data. We prove that both problems are intractable and propose effective algorithms; in particular, the second problem is more challenging and thus we further optimize its solution with carefully designed pruning strategies and parallel optimization. Extensive evaluation on real-world datasets demonstrates that our algorithms consistently identify top-ranked relevant and diverse rules, achieving an average 14.4X speedup (up to 35.57X) over the state-of-the-art method.
 
 
@@ -161,8 +159,4 @@ cd example/scripts/
 * predictConfThreshold: the confidence threshold of the prediction of validity model;
 * ifCheckValidityByMvalid: whether use validity model;
 * ifConstantOffline: whether separately process constant predicates during discovery;
-
-
-## Release License
-Please see the **LICENSE.txt** file.
 
