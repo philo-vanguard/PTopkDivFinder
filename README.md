@@ -3,6 +3,10 @@ Rule discovery is a fundamental task in data analysis, with broad applications i
 
 In this paper, we propose a user-friendly and efficient framework for diversified top-k rule discovery. As a testbed, we consider Entity Enhancing Rules (REEs), which subsume common association rules and data quality rules as special cases. Our method allows users to specify lightweight preference templates, which are used to train a correlation model that captures user preferences and generates subjective embeddings for predicates and rules. Based on these embeddings, we define an objective function to jointly measure the relevance and diversity of rules in a unified vector space; moreover, we formulate and study two key problems: (i) selecting diversified top-k rules from an existing redundant rule set, and (ii) discovering diversified top-k rules directly from raw data. We prove that both problems are intractable and propose effective algorithms; in particular, the second problem is more challenging and thus we further optimize its solution with carefully designed pruning strategies and parallel optimization. Extensive evaluation on real-world datasets demonstrates that our algorithms consistently identify top-ranked relevant and diverse rules, achieving an average 14.4X speedup (up to 35.57X) over the state-of-the-art method.
 
+
+For more details, see our paper:
+> Ziyan Han, Wanjia Chen, Yunpeng Han, and Jianbin Qin. [*Fast Diversified Top-k Rule Discovery via User-Guided Embeddings*](https://philo-vanguard.github.io/files/papers/Fast-Top-k-Diversified-Rule-Discovery-TKDE26.pdf). In TKDE (2026). IEEE.
+
 <br>
 
 The codes consist of three main parts:
