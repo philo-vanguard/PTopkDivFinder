@@ -5,7 +5,7 @@ In this paper, we propose a user-friendly and efficient framework for diversifie
 
 
 For more details, see our paper:
-> Ziyan Han, Wanjia Chen, Yunpeng Han, and Jianbin Qin. [*Fast Diversified Top-k Rule Discovery via User-Guided Embeddings*](https://philo-vanguard.github.io/files/papers/Fast-Top-k-Diversified-Rule-Discovery-TKDE26.pdf). In TKDE (2026). IEEE.
+> Ziyan Han, Wanjia Chen, Yunpeng Han, Rui Mao, and Jianbin Qin. [*Fast Diversified Top-k Rule Discovery via User-Guided Embeddings*](https://philo-vanguard.github.io/files/papers/Fast-Top-k-Diversified-Rule-Discovery-TKDE26.pdf). In TKDE (2026). IEEE.
 
 <br>
 
